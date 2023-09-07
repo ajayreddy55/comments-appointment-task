@@ -29,12 +29,15 @@ const CommentsApp = () => {
   const submitTheComment = (event) => {
     event.preventDefault();
     if (userName !== "" && commentText !== "") {
+      const randomIndex = Math.ceil(Math.random() * colorsList.length) - 1;
+      const randomColor = colorsList[randomIndex];
       const commentObject = {
         id: uuidv4(),
         userName,
         commentText,
         dateTime: Date.now(),
         isLiked: false,
+        randomBackGroundColor: randomColor,
       };
       setCommentsList([...commentsList, commentObject]);
       setUserName("");
@@ -109,7 +112,6 @@ const CommentsApp = () => {
             key={eachComment.id}
             commentDetials={eachComment}
             likedTheComment={likedTheComment}
-            backGroundColorsList={colorsList}
             deleteCommentFromList={deleteCommentFromList}
           />
         ))}

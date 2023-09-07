@@ -2,17 +2,15 @@ import "./index.css";
 import { formatDistanceToNow } from "date-fns";
 
 const CommentItem = (props) => {
+  const { commentDetials, likedTheComment, deleteCommentFromList } = props;
   const {
-    commentDetials,
-    likedTheComment,
-    backGroundColorsList,
-    deleteCommentFromList,
-  } = props;
-  const { id, userName, commentText, dateTime, isLiked } = commentDetials;
-
-  const randomIndex =
-    Math.ceil(Math.random() * backGroundColorsList.length) - 1;
-  const randomColor = backGroundColorsList[randomIndex];
+    id,
+    userName,
+    commentText,
+    dateTime,
+    isLiked,
+    randomBackGroundColor,
+  } = commentDetials;
 
   const logoLetter = userName.slice(0, 1).toUpperCase();
   const formattedDate = formatDistanceToNow(dateTime);
@@ -36,7 +34,7 @@ const CommentItem = (props) => {
       <div className="d-flex align-items-start mb-2 mt-2">
         <div
           className="comments-list-logo-container"
-          style={{ backgroundColor: randomColor }}
+          style={{ backgroundColor: randomBackGroundColor }}
         >
           <h1 className="comments-list-logo">{logoLetter}</h1>
         </div>
