@@ -1,0 +1,105 @@
+.comments-list-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.comments-list-logo-container {
+  background-color: orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments-list-logo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.comments-list-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.comments-list-time {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #94a3b8;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+
+.comments-list-comment {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #334155;
+  font-size: 20px;
+}
+
+.comments-like-image {
+  width: 25px;
+  margin-right: 4px;
+}
+
+.comments-like-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #7e858e;
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.comments-like-button:focus {
+  outline: none;
+}
+
+.comments-delete-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.comments-delete-button:focus {
+  outline: none;
+}
+
+.comments-delete-image {
+  width: 25px;
+}
+
+.comments-hr-line-list {
+  background-color: #cbd2d9;
+  height: 3px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+.liked-style-comments {
+  color: #0284c7;
+}
