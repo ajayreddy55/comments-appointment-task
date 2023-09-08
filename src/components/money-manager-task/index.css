@@ -1,0 +1,250 @@
+.money-bg-container {
+  background-color: #ffffff;
+  padding: 35px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.money-manager-profile-container {
+  width: 100%;
+  min-height: 180px;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+  padding-bottom: 20px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.money-profile-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+  color: #475569;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.money-profile-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: #475569;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.money-profile-text-span {
+  color: #0b69ff;
+}
+
+.money-balance-container {
+  background-color: #ecfccb;
+  border: 2px solid #84cc16;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27%;
+  max-width: 31%;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.money-image {
+  width: 100px;
+  margin-right: 9px;
+}
+
+.money-balance-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.money-balance-amount {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.money-income-container {
+  background-color: #cffafe;
+  border: 2px solid #06b6d4;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27%;
+  max-width: 31%;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.money-expenses-container {
+  background-color: #ede9fe;
+  border: 2px solid #7c3aed;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27%;
+  max-width: 31%;
+  margin-right: 2px;
+  flex-grow: 1;
+  min-height: 150px;
+}
+
+.money-input-card {
+  border: 2px solid #cbd5e1;
+  width: 40%;
+  min-height: 200px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.money-add-transaction-heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.money-input-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #7e858e;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.money-title-input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  border: 2px solid #7e858e;
+  border-radius: 10px;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 11px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 42px;
+  outline: none;
+}
+
+.money-select-options {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  padding: 11px;
+}
+
+.money-details-table-container {
+  border: 2px solid #cbd5e1;
+  width: 55%;
+  min-height: 200px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  border-radius: 12px;
+  flex-grow: 1;
+  margin-right: 2px;
+}
+
+.money-history-heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 11px;
+  margin-bottom: 13px;
+}
+
+.money-table-container {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  border-collapse: collapse;
+  border: 2px solid #d7dfe9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.money-table-row-main {
+  padding: 11px;
+}
+
+.money-table-header-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  padding: 9px;
+}
+
+.money-income-item-list {
+  border-top: 2px solid #d7dfe9;
+}
+
+.money-list-income-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #334155;
+  padding: 9px;
+}
+
+.money-delete-button-list {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.money-delete-button-list:focus {
+  outline: none;
+}
+
+.money-income-delete-icon {
+  width: 20px;
+}
