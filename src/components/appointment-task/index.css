@@ -98,7 +98,7 @@
 }
 
 .appointments-image {
-  width: 42%;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -138,7 +138,7 @@
   padding-left: 0px;
   display: flex;
   align-items: stretch;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .active-starred-button-appointments {

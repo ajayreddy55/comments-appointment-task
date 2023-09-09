@@ -58,10 +58,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 27%;
-  max-width: 31%;
-  margin-right: 10px;
-  flex-grow: 1;
+  width: 100%;
+  margin-top: 11px;
 }
 
 .money-image {
@@ -95,10 +93,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 27%;
-  max-width: 31%;
-  margin-right: 10px;
-  flex-grow: 1;
+  width: 100%;
+  margin-top: 11px;
 }
 
 .money-expenses-container {
@@ -109,16 +105,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 27%;
-  max-width: 31%;
-  margin-right: 2px;
-  flex-grow: 1;
+  width: 100%;
   min-height: 150px;
+  margin-top: 11px;
 }
 
 .money-input-card {
   border: 2px solid #cbd5e1;
-  width: 40%;
+  width: 100%;
   min-height: 200px;
   padding: 26px;
   display: flex;
@@ -126,6 +120,8 @@
   justify-content: center;
   margin-right: 10px;
   border-radius: 12px;
+  flex-grow: 1;
+  margin-bottom: 11px;
 }
 
 .money-add-transaction-heading {
@@ -177,7 +173,7 @@
 
 .money-details-table-container {
   border: 2px solid #cbd5e1;
-  width: 55%;
+  width: 100%;
   min-height: 200px;
   padding: 26px;
   display: flex;
@@ -187,6 +183,13 @@
   border-radius: 12px;
   flex-grow: 1;
   margin-right: 2px;
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .money-details-table-container {
+    margin-left: 0px;
+  }
 }
 
 .money-history-heading {

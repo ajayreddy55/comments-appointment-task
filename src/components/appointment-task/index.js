@@ -63,54 +63,56 @@ const AppointmentApp = () => {
     <div className="appointment-bg-container">
       <div className="appointment-card">
         <h1 className="appointment-main-heading">Add Appointment</h1>
-        <div className="d-flex justify-content-between align-items-stretch mt-3 mb-3">
-          <form
-            className="d-flex flex-column justify-content-center w-50"
-            onSubmit={submitTheForm}
-          >
-            <div className="d-flex flex-column mt-2 mb-2">
-              <label
-                className="appointment-label-title"
-                htmlFor="appointmentTitleInput"
-              >
-                TITLE
-              </label>
-              <input
-                type="text"
-                placeholder="Title"
-                className="appointment-title-input"
-                id="appointmentTitleInput"
-                value={appointmentType}
-                onChange={changeAppointmentType}
-              />
-            </div>
-            <div className="d-flex flex-column mt-2 mb-2">
-              <label
-                className="appointment-label-date"
-                htmlFor="appointmentDateInput"
-              >
-                TITLE
-              </label>
-              <input
-                type="date"
-                className="appointment-date-input"
-                id="appointmentDateInput"
-                value={appointmentDate}
-                onChange={changeAppointmentDate}
-              />
-            </div>
-            <button type="submit" className="appointment-add-button">
-              Add
-            </button>
-          </form>
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png"
-            alt="appointments"
-            className="appointments-image"
-          />
+        <div className="container-fluid mt-3 mb-3">
+          <div className="row d-flex justify-content-between align-items-stretch">
+            <form
+              className="d-flex flex-column justify-content-center w-100 col-12 col-md-6"
+              onSubmit={submitTheForm}
+            >
+              <div className="d-flex flex-column mt-2 mb-2">
+                <label
+                  className="appointment-label-title"
+                  htmlFor="appointmentTitleInput"
+                >
+                  TITLE
+                </label>
+                <input
+                  type="text"
+                  placeholder="Title"
+                  className="appointment-title-input"
+                  id="appointmentTitleInput"
+                  value={appointmentType}
+                  onChange={changeAppointmentType}
+                />
+              </div>
+              <div className="d-flex flex-column mt-2 mb-2">
+                <label
+                  className="appointment-label-date"
+                  htmlFor="appointmentDateInput"
+                >
+                  TITLE
+                </label>
+                <input
+                  type="date"
+                  className="appointment-date-input"
+                  id="appointmentDateInput"
+                  value={appointmentDate}
+                  onChange={changeAppointmentDate}
+                />
+              </div>
+              <button type="submit" className="appointment-add-button">
+                Add
+              </button>
+            </form>
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png"
+              alt="appointments"
+              className="appointments-image d-none d-md-block col-md-5"
+            />
+          </div>
         </div>
         <hr className="appointment-hr-line" />
-        <div className="d-flex align-items-center justify-content-between mt-3 mb-3">
+        <div className="d-flex align-items-center justify-content-between flex-wrap mt-3 mb-3">
           <h2 className="appointments-section-heading">Appointments</h2>
           <button
             className={`appointments-starred-button ${starredButtonStyle}`}
@@ -120,15 +122,17 @@ const AppointmentApp = () => {
             Starred
           </button>
         </div>
-        <ul className="appointment-list-container">
-          {displayList.map((eachItem) => (
-            <AppointmentItem
-              key={eachItem.id}
-              appointmentDetails={eachItem}
-              isStarIconClicked={isStarIconClicked}
-            />
-          ))}
-        </ul>
+        <div className="container-fluid mt-3 mb-3">
+          <ul className="appointment-list-container row">
+            {displayList.map((eachItem) => (
+              <AppointmentItem
+                key={eachItem.id}
+                appointmentDetails={eachItem}
+                isStarIconClicked={isStarIconClicked}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

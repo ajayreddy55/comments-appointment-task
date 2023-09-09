@@ -18,7 +18,7 @@ const AppointmentItem = (props) => {
   const formattedDate = format(new Date(appointmentDate), "dd MMMM yyyy, EEEE");
 
   return (
-    <li className="appointment-list-item-container">
+    <li className="appointment-list-item-container col-12 col-md-5 col-lg-3">
       <div className="d-flex justify-content-between align-items-center mt-2 mb-2">
         <h3 className="appointment-list-item-type">{appointmentType}</h3>
         <img
